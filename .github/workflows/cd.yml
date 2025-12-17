@@ -23,8 +23,8 @@ jobs:
     - uses: actions/checkout@v4
     - name: "Build Docker Image"
       run: docker built -t rosey.jadon/sample-node-app .
-    - name: "Build Successful"
+    - name: "Build Successful!!!!"
       run: echo "Docker Image Built Successfully!"
     
-    
+
   
