@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: "Build Docker Image"
-      run: docker Build -t rosey.jadon/sample-node-app .
+      run: docker build -t rosey.jadon/sample-node-app .
     - name: "Build Successful!!!!"
       run: echo "Docker Image Built Successfully!"
     - name: "Login with Docker Credentials"
