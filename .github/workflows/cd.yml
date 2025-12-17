@@ -26,9 +26,13 @@ jobs:
     - name: "Build Successful!!!!"
       run: echo "Docker Image Built Successfully!"
     - name: "Login with Docker Credentials"
-      run: echo "dckr_pat_Ge1DuiW7tEinq7ryB06RcOgctbI" | docker login -u rosey.jadon password-stdin
+      run: echo "${{secrets.DOCKER_HUB_PASSWORD}}" | docker login -u ${{secrets.DOCKER_USERNAME}} --password-stdin
     - name: "Login Successful"
       run: echo "Logged in to Docker Hub Successfully!"
+    - name: "Push image to Docker hub"
+      run: docker push rosey.jadon/sample-node-app:latest
+    - name: "Image pushed successfully"
+      run: echo "Docker Image pushed to Docker Hub Successfully!"
       
     
     
