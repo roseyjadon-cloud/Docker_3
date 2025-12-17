@@ -26,7 +26,7 @@ jobs:
     - name: "Build Successful!!!!"
       run: echo "Docker Image Built Successfully!"
     - name: "Login with Docker Credentials"
-      run: echo "dckr_pat_Ge1DuiW7tEinq7ryB06RcOgctbI" | docker login -u "rosey.jadon" password-stdin
+      run: echo "dckr_pat_Ge1DuiW7tEinq7ryB06RcOgctbI" | docker login -u rosey.jadon password-stdin
     - name: "Login Successful"
       run: echo "Logged in to Docker Hub Successfully!"
       
