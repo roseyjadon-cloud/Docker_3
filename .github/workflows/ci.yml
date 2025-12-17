@@ -35,7 +35,8 @@ jobs:
       run: echo "npm run build -> BuildingApp....." 
     - name: "Build Successful"
       run: echo "Build Succeeded!"
-      test:
+      
+  test:
 
     runs-on: ubuntu-latest
 
